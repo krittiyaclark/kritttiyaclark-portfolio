@@ -1,7 +1,11 @@
 import React from 'react';
 
-import './homepage.component';
+import Header from '../../components/header.component';
 
-const HomePage = () => <div className='homepage'></div>;
+const HomePage = () => (
+	<div className='homepage'>
+		<Header />
+	</div>
+);
 
 export default HomePage;
