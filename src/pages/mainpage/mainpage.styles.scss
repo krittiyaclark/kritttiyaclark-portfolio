@@ -1,0 +1,48 @@
+main {
+	#home,
+	#about,
+	#projects,
+	#skills,
+	#resume,
+	#contact {
+		padding: 0.5rem;
+		height: 100vh;
+		background-size: cover;
+	}
+
+	#home {
+		background-color: #858d9a;
+	}
+	#about {
+		background-color: lightseagreen;
+	}
+	#projects {
+		background-color: lightcoral;
+	}
+	#skills {
+		background-color: teal;
+	}
+	#resume {
+		background-color: rgb(187, 66, 224);
+	}
+	#contact {
+		background-color: lightsteelblue;
+	}
+
+	#scrollTop {
+		position: fixed;
+		bottom: 10px;
+		right: 30px;
+		z-index: 99;
+		font-family: inherit;
+		font-size: 2rem;
+		border: none;
+		background: none;
+		cursor: pointer;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
