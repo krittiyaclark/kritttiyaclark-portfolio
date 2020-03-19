@@ -11,17 +11,19 @@ import FooterPage from '../../pages/footerpage/footerpage.component';
 import './mainpage.styles.scss';
 
 const MainPage = () => (
-	<>
-		<main>
-			<HomePage />
-			<AboutPage />
-			<ProjectsPage />
-			<SkillsPage />
-			<ResumePage />
-			<ContactPage />
-		</main>
+	<main>
+		<HomePage />
+		<AboutPage />
+		<ProjectsPage />
+		<SkillsPage />
+		<ResumePage />
+		<ContactPage />
+
 		<FooterPage />
-	</>
+		<button id='scrollTop'>
+			<a href='#home'>↑</a>
+		</button>
+	</main>
 );
 
 export default MainPage;

@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import MainPage from './pages/mainpage/mainpage.component';
 import HomePage from './pages/homepage/homepage.component';
 import AboutPage from './pages/aboutpage/aboutpage.component';
-import Header from './components/header.component';
+import Header from './components/header/header.component';
 
 function App() {
 	return (
