@@ -14,11 +14,10 @@ const MainPage = () => (
 	<main>
 		<HomePage />
 		<AboutPage />
-		<ProjectsPage />
 		<SkillsPage />
+		<ProjectsPage />
 		<ResumePage />
 		<ContactPage />
-
 		<FooterPage />
 		<button id='scrollTop'>
 			<a href='#home'>↑</a>

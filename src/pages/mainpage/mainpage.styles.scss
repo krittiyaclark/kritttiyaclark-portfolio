@@ -7,7 +7,7 @@ main {
 	#contact {
 		position: relative;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		overflow: hidden;
 
 		&.section-padding {
@@ -18,7 +18,6 @@ main {
 	#home {
 		background-color: #858d9a;
 		position: relativ;
-		height: 100vh;
 	}
 	#about {
 		background-color: lightseagreen;
@@ -27,7 +26,7 @@ main {
 		background-color: lightcoral;
 	}
 	#skills {
-		background-color: teal;
+		background: #f6f6f6 none repeat scroll 0 0;
 	}
 	#resume {
 		background-color: rgb(187, 66, 224);
@@ -50,6 +49,18 @@ main {
 		a {
 			text-decoration: none;
 			color: black;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	main {
+		#about,
+		#projects,
+		#skills,
+		#resume,
+		#contact {
+			height: fit-content;
 		}
 	}
 }

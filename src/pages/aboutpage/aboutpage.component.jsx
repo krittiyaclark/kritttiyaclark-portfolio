@@ -32,7 +32,7 @@ class AboutPage extends React.Component {
 					</div>
 
 					<div className='row'>
-						<div className='col-md-4'>
+						<div className='col-md-4 col-xs-4'>
 							<div className='about-img'>
 								<img
 									src='https://via.placeholder.com/350'
@@ -41,7 +41,7 @@ class AboutPage extends React.Component {
 								/>
 							</div>
 						</div>
-						<div className='col-md-8'>
+						<div className='col-md-8 col-xs-8'>
 							<p className='quoteline'>
 								Eleifend donec pretium vulputate sapien nec sagittis aliquam
 							</p>
