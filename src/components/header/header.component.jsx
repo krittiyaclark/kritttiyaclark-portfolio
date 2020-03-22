@@ -1,26 +1,57 @@
 import React from 'react';
 
-import { Navbar, Nav } from 'react-bootstrap';
-
 import './header.styles.scss';
 
 const Header = () => (
-	<div>
-		<Navbar expand='lg'>
-			<Navbar.Brand href='#home'>KC</Navbar.Brand>
-			<Navbar.Toggle aria-controls='basic-navbar-nav' />
-			<Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
-				<Nav>
-					<Nav.Link href='#home'>Home</Nav.Link>
-					<Nav.Link href='#about'>About</Nav.Link>
-					<Nav.Link href='#projects'>Projects</Nav.Link>
-					<Nav.Link href='#skills'>Skills</Nav.Link>
-					<Nav.Link href='#resume'>Resume</Nav.Link>
-					<Nav.Link href='#contact'>Contact</Nav.Link>
-				</Nav>
-			</Navbar.Collapse>
-		</Navbar>
-	</div>
+	<nav className='navbar navbar-expand-lg navbar-light bg-light'>
+		<a className='navbar-brand' href='#'>
+			KC
+		</a>
+		<button
+			className='navbar-toggler'
+			type='button'
+			data-toggle='collapse'
+			data-target='#navbarNav'
+			aria-controls='navbarNav'
+			aria-expanded='false'
+			aria-label='Toggle navigation'>
+			<span className='navbar-toggler-icon'></span>
+		</button>
+		<div className='collapse navbar-collapse' id='navbarNav'>
+			<ul className='navbar-nav ml-auto'>
+				<li className='nav-item active'>
+					<a className='nav-link' href='/'>
+						Home <span className='sr-only'>(current)</span>
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a className='nav-link' href='#about'>
+						About
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a className='nav-link' href='#projects'>
+						Projects
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a className='nav-link' href='#skills'>
+						Skills
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a className='nav-link' href='#resume'>
+						Resume
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a className='nav-link' href='#contact'>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 );
 
 export default Header;

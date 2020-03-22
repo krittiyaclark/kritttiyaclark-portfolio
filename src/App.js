@@ -7,6 +7,8 @@ import HomePage from './pages/homepage/homepage.component';
 import AboutPage from './pages/aboutpage/aboutpage.component';
 import Header from './components/header/header.component';
 
+import './App.css';
+
 function App() {
 	return (
 		<div className='App'>

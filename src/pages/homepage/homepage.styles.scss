@@ -5,14 +5,8 @@
 
 	.home-content {
 		height: 100%;
-		display: table;
 		position: absolute;
-		// top: 0;
-		// left: 0;
-		// right: 0;
-		z-index: 10;
 		width: 100%;
-		margin: 0px auto;
 		text-align: center;
 
 		.text-center {
@@ -24,12 +18,12 @@
 
 	.header {
 		padding: 20px;
-		// max-width: 694px;
+		max-width: 850px;
 		margin-left: auto;
 		margin-right: auto;
 		color: #ffffff;
 
-		.heading {
+		.heading h2 {
 			font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
 			display: block;
 			font-size: 80px;
@@ -39,21 +33,15 @@
 			letter-spacing: 1px;
 		}
 
-		.box-heading {
+		.box-heading p {
 			font-family: 'Oswald', helvetica, arial, sans-serif;
-			display: block;
-			font-size: 32px;
-			line-height: 1.2;
-			width: 100%;
-			margin: 0px auto;
-			text-transform: uppercase;
-			letter-spacing: -2px;
-		}
-
-		.box-inner {
-			border: 3px solid #ffffff;
+			background: rgba(255, 255, 149, 0.8);
 			display: inline-block;
-			padding: 4px 20px;
+			margin: 0 auto 30px;
+			font-weight: 400;
+			font-size: 22px;
+			padding: 0 15px;
+			color: #000;
 		}
 	}
 
@@ -80,5 +68,18 @@
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.homepage .header .heading h2 {
+		font-size: 52px;
+		padding: 5px 15px;
+	}
+
+	.homepage .header .box-heading p {
+		font-size: 18px;
+		padding: 5px 15px;
+		letter-spacing: 1px;
 	}
 }

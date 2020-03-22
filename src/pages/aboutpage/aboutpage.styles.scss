@@ -1,0 +1,35 @@
+.section-title {
+	margin-bottom: 50px;
+
+	h2 {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		position: relative;
+		font-size: 34px;
+
+		&:after {
+			border-bottom: 2px solid #555;
+			bottom: 0;
+			content: '';
+			height: 3px;
+			left: 0;
+			margin: 0 auto;
+			position: absolute;
+			right: 0;
+			width: 10%;
+		}
+	}
+}
+
+.quoteline {
+	font-family: oswald, Impact, 'Arial Narrow Bold', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+	.about-img {
+		margin-bottom: 15px;
+	}
+}

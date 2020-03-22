@@ -43,23 +43,29 @@ class HomePage extends React.Component {
 			<section id='home'>
 				<div className='homepage'>
 					<div className='home-content'>
-						<div className='text-center'>
-							<div className='header'>
-								<div className='heading'>Krittiya Clark</div>
-								<div className='box-heading'>
-									<div className='box-inner'>Front-End Web Developer</div>
-								</div>
+						<div className='contianer d-flex h-100'>
+							<div className='row justify-content-center align-items-center w-100'>
+								<div className='col-md-12 col-xs-12 mx-auto'>
+									<div className='header'>
+										<div className='heading'>
+											<h2>Krittiya Clark</h2>
+										</div>
+										<div className='box-heading'>
+											<p>Front-End Web Developer</p>
+										</div>
 
-								<div className='social_links'>
-									<ul className='list-unstyled'>
-										{socialLinks.map(link => (
-											<li key={link.id}>
-												<a href={link.url} target='_blank'>
-													<img src={link.icon} alt={link.alt} />
-												</a>
-											</li>
-										))}
-									</ul>
+										<div className='social_links'>
+											<ul className='list-unstyled'>
+												{socialLinks.map(link => (
+													<li key={link.id}>
+														<a href={link.url} target='_blank'>
+															<img src={link.icon} alt={link.alt} />
+														</a>
+													</li>
+												))}
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
