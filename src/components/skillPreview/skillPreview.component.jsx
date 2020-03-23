@@ -1,21 +1,17 @@
 import React from 'react';
 
-import './skillPreview.styles.scss';
+import './skillpreview.styles.scss';
 
-const Skill = ({ title, skills }) => (
+export const SkillPreview = props => (
 	<div className='row'>
-		<div className='col'>
-			{skills.map(skill => (
-				<div className='card'>
-					<h5 className='card-title' key={skill.id}>
-						{title.toUpperCase()}
-					</h5>
-					<img src={skill.icon} alt='icon' />
-					<p className='card-text'>{skill.skill}</p>
-				</div>
-			))}
-		</div>
+		{props.skills.map(skill => (
+			<div className='col' key={skill.id}>
+				<img src={skill.icon} alt='icon' />
+				<h1>{skill.name}</h1>
+				<ul>
+					<li>{skill.skill}</li>
+				</ul>
+			</div>
+		))}
 	</div>
 );
-
-export default Skill;

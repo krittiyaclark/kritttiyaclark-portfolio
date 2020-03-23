@@ -4,7 +4,7 @@ import browserIcon from '../../assets/icons/icons8-open-in-browser-26.png';
 import databaseIcon from '../../assets/icons/icons8-database-26.png';
 import deploymentIcon from '../../assets/icons/icons8-clouds-26.png';
 
-import Skill from '../../components/skillPreview/skillPreview.component';
+import { SkillPreview } from '../../components/skillPreview/skillpreview.component';
 
 import './skillspage.styles.scss';
 
@@ -18,19 +18,19 @@ class SkillsPage extends React.Component {
 					id: 1,
 					icon: browserIcon,
 					name: 'frontEnd',
-					skill: 'HTML5, CSS3 | SCSS, JavaScript, React'
+					skill: ['HTML5', 'CSS3 | SCSS', 'JavaScript, React']
 				},
 				{
 					id: 2,
 					icon: databaseIcon,
 					name: 'database',
-					skill: 'firebase'
+					skill: ['firebase']
 				},
 				{
 					id: 3,
 					icon: deploymentIcon,
 					name: 'deployment',
-					skill: 'AWS ECS, Heroku, GitHub'
+					skill: ['AWS ECS', 'Heroku', 'GitHub']
 				}
 			]
 		};
@@ -48,9 +48,7 @@ class SkillsPage extends React.Component {
 							</div>
 						</div>
 					</div>
-					{skills.map(({ id, ...otherSkillProps }) => (
-						<Skill key={id} {...otherSkillProps} />
-					))}
+					<SkillPreview skills={skills}></SkillPreview>
 				</div>
 			</section>
 		);
