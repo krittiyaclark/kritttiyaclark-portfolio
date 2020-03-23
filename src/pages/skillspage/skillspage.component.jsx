@@ -4,7 +4,7 @@ import browserIcon from '../../assets/icons/icons8-open-in-browser-26.png';
 import databaseIcon from '../../assets/icons/icons8-database-26.png';
 import deploymentIcon from '../../assets/icons/icons8-clouds-26.png';
 
-import { SkillPreview } from '../../components/skillPreview/skillpreview.component';
+import { SkillPreview } from '../../components/skillPreview/skillPreview.component';
 
 import './skillspage.styles.scss';
 
@@ -17,20 +17,20 @@ class SkillsPage extends React.Component {
 				{
 					id: 1,
 					icon: browserIcon,
-					name: 'frontEnd',
-					skill: ['HTML5', 'CSS3 | SCSS', 'JavaScript, React']
+					title: 'front end',
+					subSkill: ['HTML5', 'CSS3 | SCSS', 'JavaScript', 'React']
 				},
 				{
 					id: 2,
 					icon: databaseIcon,
-					name: 'database',
-					skill: ['firebase']
+					title: 'database',
+					subSkill: ['firebase']
 				},
 				{
 					id: 3,
 					icon: deploymentIcon,
-					name: 'deployment',
-					skill: ['AWS ECS', 'Heroku', 'GitHub']
+					title: 'deployment',
+					subSkill: ['AWS ECS', 'Heroku', 'GitHub']
 				}
 			]
 		};

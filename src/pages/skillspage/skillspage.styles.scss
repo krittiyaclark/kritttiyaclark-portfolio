@@ -1,0 +1,18 @@
+.card-box {
+	margin-bottom: 30px;
+	padding: 50px 25px;
+	-webkit-transition: all 0.36s ease-in-out 0s;
+	transition: all 0.36s ease-in-out 0s;
+	display: block;
+
+	&:hover {
+		box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.08);
+	}
+	.icon-strategy {
+		width: 52px;
+	}
+
+	.card-title {
+		margin: 20px 0 10px 0;
+	}
+}
