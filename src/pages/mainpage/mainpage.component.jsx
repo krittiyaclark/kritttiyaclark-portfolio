@@ -2,7 +2,7 @@ import React from 'react';
 
 import HomePage from '../../pages/homepage/homepage.component';
 import AboutPage from '../../pages/aboutpage/aboutpage.component';
-import ProjectsPage from '../../pages/projectspage/projectspage.component';
+import PortfolioPage from '../../pages/portfoliopage/portfoliopage.component';
 import SkillsPage from '../../pages/skillspage/skillspage.component';
 import ResumePage from '../../pages/resumepage/resumepage.component';
 import ContactPage from '../../pages/contactpage/contactpage.component';
@@ -15,7 +15,7 @@ const MainPage = () => (
 		<HomePage />
 		<AboutPage />
 		<SkillsPage />
-		<ProjectsPage />
+		<PortfolioPage />
 		<ResumePage />
 		<ContactPage />
 		<FooterPage />
