@@ -6,6 +6,7 @@ import MainPage from './pages/mainpage/mainpage.component';
 import HomePage from './pages/homepage/homepage.component';
 import AboutPage from './pages/aboutpage/aboutpage.component';
 import SkillsPage from './pages/skillspage/skillspage.component';
+import PortfolioPage from './pages/portfoliopage/portfoliopage.component';
 
 import Header from './components/header/header.component';
 
@@ -20,6 +21,7 @@ function App() {
 				<Route exact path='/' component={HomePage} />
 				<Route path='/about' component={AboutPage} />
 				<Route path='/skill' component={SkillsPage} />
+				<Route path='/portfolio' component={PortfolioPage} />
 			</Switch>
 		</div>
 	);

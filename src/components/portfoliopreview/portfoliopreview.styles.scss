@@ -1,0 +1,14 @@
+.in-line {
+	display: inline-block;
+	padding: 5px;
+}
+
+.box-margin {
+	margin-bottom: 30px;
+
+	.button-center {
+		display: table;
+
+		margin: 0 auto;
+	}
+}

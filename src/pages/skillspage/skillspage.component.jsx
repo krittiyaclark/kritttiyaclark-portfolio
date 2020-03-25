@@ -40,13 +40,9 @@ class SkillsPage extends React.Component {
 		const { skills } = this.state;
 		return (
 			<section id='skills' className='section-padding'>
-				<div className='container-fluid'>
-					<div className='row'>
-						<div className='col'>
-							<div className='section-title text-center'>
-								<h2>SKILLS.</h2>
-							</div>
-						</div>
+				<div className='container'>
+					<div className='section-title text-center'>
+						<h2>SKILLS.</h2>
 					</div>
 					<SkillPreview skills={skills}></SkillPreview>
 				</div>

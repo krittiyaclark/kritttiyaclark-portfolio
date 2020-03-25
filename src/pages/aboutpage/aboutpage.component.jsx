@@ -22,7 +22,7 @@ class AboutPage extends React.Component {
 	render() {
 		return (
 			<section id='about' className='section-padding'>
-				<div className='container-fluid'>
+				<div className='container'>
 					<div className='row'>
 						<div className='col'>
 							<div className='section-title text-center'>
