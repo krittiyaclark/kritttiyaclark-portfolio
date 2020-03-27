@@ -1,29 +1,33 @@
 import React from 'react';
 
-import { Switch, Route } from 'react-router-dom';
-
-import MainPage from './pages/mainpage/mainpage.component';
 import HomePage from './pages/homepage/homepage.component';
 import AboutPage from './pages/aboutpage/aboutpage.component';
 import SkillsPage from './pages/skillspage/skillspage.component';
 import PortfolioPage from './pages/portfoliopage/portfoliopage.component';
+// import PortfolioDetail from './pages/portfolio-detail-page/portfolio-detail-page.component';
+import ResumePage from './pages/resumepage/resumepage.component';
+import ContactPage from './pages/contactpage/contactpage.component';
+import FooterPage from './pages/footerpage/footerpage.component';
 
 import Header from './components/header/header.component';
 
-import './App.css';
+import './App.scss';
 
 function App() {
 	return (
-		<div className='App'>
+		<main>
 			<Header />
-			<Switch>
-				<Route path='/' component={MainPage} />
-				<Route exact path='/' component={HomePage} />
-				<Route path='/about' component={AboutPage} />
-				<Route path='/skill' component={SkillsPage} />
-				<Route path='/portfolio' component={PortfolioPage} />
-			</Switch>
-		</div>
+			<HomePage />
+			<AboutPage />
+			<SkillsPage />
+			<PortfolioPage />
+			<ResumePage />
+			<ContactPage />
+			<FooterPage />
+			<button id='scrollTop'>
+				<a href='#home'>↑</a>
+			</button>
+		</main>
 	);
 }
 

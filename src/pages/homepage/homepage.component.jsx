@@ -58,7 +58,10 @@ class HomePage extends React.Component {
 											<ul className='list-unstyled'>
 												{socialLinks.map(link => (
 													<li key={link.id}>
-														<a href={link.url} target='_blank'>
+														<a
+															href={link.url}
+															rel='noopener noreferrer'
+															target='_blank'>
 															<img src={link.icon} alt={link.alt} />
 														</a>
 													</li>

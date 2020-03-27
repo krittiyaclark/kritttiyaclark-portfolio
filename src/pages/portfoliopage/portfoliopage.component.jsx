@@ -16,7 +16,7 @@ class PortfolioPage extends React.Component {
 					title: 'front end',
 					stack: ['HTML5', 'CSS3 | SCSS', 'JavaScript', 'React'],
 					view: 'View Details',
-					url: ''
+					url: 'https://pomodoro-tracker.com'
 				},
 				{
 					id: 2,
@@ -41,7 +41,7 @@ class PortfolioPage extends React.Component {
 	render() {
 		const { portfolios } = this.state;
 		return (
-			<section id='projects' className='section-padding'>
+			<section id='portfolio' className='section-padding'>
 				<div className='container'>
 					<div className='section-title text-center'>
 						<h2>PORTFOLIO.</h2>

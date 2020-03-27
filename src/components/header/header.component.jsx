@@ -4,7 +4,7 @@ import './header.styles.scss';
 
 const Header = () => (
 	<nav className='navbar navbar-expand-lg navbar-light bg-light'>
-		<a className='navbar-brand' href='#'>
+		<a className='navbar-brand' href='/'>
 			KC
 		</a>
 		<button
