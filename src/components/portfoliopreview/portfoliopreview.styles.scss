@@ -36,6 +36,7 @@
 		background-color: #2980b9;
 		color: white;
 		transform: rotateY(180deg);
+		padding: 1.25rem;
 	}
 }
 
@@ -58,17 +59,55 @@
 @media only screen and (min-width: 576px) {
 	.box {
 		height: fit-content;
+
+		.flip-card {
+			width: 100%;
+			// height: 350px;
+		}
 	}
 }
 
 @media only screen and (max-width: 767px) {
 	.box {
 		height: fit-content;
+
+		.flip-card {
+			width: 100%;
+			height: 500px;
+
+			.card-title {
+				font-size: 1.3rem;
+			}
+		}
+	}
+
+	ul li {
+		font-size: 1.1rem;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	.box {
 		height: fit-content;
+
+		.flip-card {
+			width: 100%;
+		}
+	}
+}
+
+// iPad Portrait
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.box .flip-card {
+		width: 100%;
+		height: 450px;
+	}
+}
+
+// Pixel Portrait
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	.box .flip-card {
+		width: 100%;
+		height: 500px;
 	}
 }

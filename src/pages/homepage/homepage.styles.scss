@@ -33,40 +33,15 @@
 			letter-spacing: 1px;
 		}
 
-		.box-heading p {
+		.box-bg a {
 			font-family: 'Oswald', helvetica, arial, sans-serif;
 			background: rgba(255, 255, 149, 0.8);
 			display: inline-block;
-			margin: 0 auto 30px;
+			margin: 50px;
 			font-weight: 400;
 			font-size: 22px;
-			padding: 0 15px;
+			padding: 15px;
 			color: #000;
-		}
-	}
-
-	.social_links {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		padding-top: 50px;
-		width: 100%;
-
-		ul li {
-			display: inline-block;
-			flex-direction: row;
-			padding-right: 9px;
-
-			img {
-				width: 50px;
-				height: auto;
-				cursor: pointer;
-
-				&:hover {
-					cursor: pointer;
-					transform: scale(1.1);
-				}
-			}
 		}
 	}
 }

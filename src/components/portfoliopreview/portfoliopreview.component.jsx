@@ -15,7 +15,7 @@ export const PortfolioPreview = props => (
 								<img
 									src={portfolio.image}
 									alt='icon'
-									className='card-img-top'
+									className='card-img-top img-fluid'
 								/>
 								<div className='card-body'>
 									<h5 className='card-title'>
@@ -28,20 +28,19 @@ export const PortfolioPreview = props => (
 									))}
 								</div>
 							</div>
-							<div className='card-body'>
-								<div className='flip-card-back'>
-									<p className='card-text'>
-										Some quick example text to build on the card title and make
-										up the bulk of the card's content.
-									</p>
-									<a
-										href={portfolio.url}
-										rel='noopener noreferrer'
-										target='_blank'
-										className='btn btn-outline-secondary button button-center text-center'>
-										{portfolio.view}
-									</a>
-								</div>
+
+							<div className='flip-card-back'>
+								<p className='card-text'>
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+								<a
+									href={portfolio.url}
+									rel='noopener noreferrer'
+									target='_blank'
+									className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
+									{portfolio.view}
+								</a>
 							</div>
 						</div>
 					</div>
