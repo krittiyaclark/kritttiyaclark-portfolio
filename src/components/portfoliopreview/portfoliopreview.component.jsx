@@ -1,12 +1,10 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import './portfoliopreview.styles.scss';
 
 export const PortfolioPreview = props => (
 	<div className='row'>
-		{props.portfolios.map(portfolio => (
+		{props.portfolioPreview.map(portfolio => (
 			<div className='col-md-4 col-sm-6' key={portfolio.id}>
 				<div className='card text-center box'>
 					<div className='flip-card'>

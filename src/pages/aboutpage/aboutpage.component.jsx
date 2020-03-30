@@ -5,7 +5,7 @@ import './aboutpage.styles.scss';
 class AboutPage extends React.Component {
 	constructor(props) {
 		super(props);
-		console.log(props);
+
 		this.state = {
 			isOpen: true
 		};

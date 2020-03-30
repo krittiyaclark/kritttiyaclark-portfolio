@@ -46,7 +46,7 @@ class PortfolioPage extends React.Component {
 					<div className='section-title text-center'>
 						<h2>PORTFOLIO.</h2>
 					</div>
-					<PortfolioPreview portfolios={portfolios} />
+					<PortfolioPreview portfolioPreview={portfolios} />
 				</div>
 			</section>
 		);
