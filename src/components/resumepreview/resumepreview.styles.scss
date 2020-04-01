@@ -1,0 +1,138 @@
+.timeline {
+	// background: url(../img/timeline-bg.jpg) repeat-y scroll center center
+	// 	rgba(0, 0, 0, 0);
+	height: auto;
+	margin: 40px auto 0;
+	padding: 0 0 80px;
+	position: relative;
+	width: 100%;
+
+	.title {
+		background: none repeat scroll 0 0 #ffffff;
+		border: 3px solid #d6d6d6;
+		border-radius: 6px;
+		clear: both;
+		color: #3c3d3d;
+		font-size: 18px;
+		font-weight: 400;
+		height: 65px;
+		margin: 31px auto;
+		padding: 15px 0;
+		text-align: center;
+		text-transform: uppercase;
+		width: 150px;
+	}
+
+	.note-bg {
+		background: none repeat scroll 0 0 rgba(242, 242, 242, 0.1);
+		border-radius: 12px;
+		cursor: pointer;
+		padding: 20px;
+		width: 95%;
+
+		&:hover {
+			background: none repeat scroll 0 0 #fff;
+		}
+
+		&:hover h4 {
+			color: #707070;
+		}
+
+		&:hover p {
+			color: #767676;
+		}
+
+		&:hover:after {
+			background: none repeat scroll 0 0 #474d5d;
+			border: 2px solid #666666;
+		}
+
+		&:hover .arrow {
+			color: #fff;
+		}
+	}
+
+	.note {
+		float: left;
+		margin: 10px 0;
+		position: relative;
+		transition: all 0.5s ease 0s;
+		z-index: 550;
+
+		h4 {
+			color: #666666;
+			font-size: 19px;
+			margin: 5px 0;
+			text-transform: uppercase;
+		}
+
+		h5 {
+			color: #666666;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+		.arrow {
+			color: rgba(242, 242, 242, 0.1);
+			font-size: 12px;
+			left: auto;
+			position: absolute;
+			right: 5.5%;
+			top: 20px;
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+			transition: all 0.5s ease 0s;
+		}
+
+		&:nth-of-type(2n) {
+			margin: -20px 0 30px 0;
+		}
+
+		&:nth-of-type(2n):after {
+			left: -4.8%;
+		}
+
+		&:nth-of-type(2n) .arrow {
+			left: 1.4%;
+			right: auto;
+			-moz-transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		&:hover:after {
+			background: none repeat scroll 0 0 #474d5d;
+			border: 2px solid #666666;
+		}
+
+		&:after {
+			background: none repeat scroll 0 0 #e1e1e1;
+			border: 2px solid #d6d6d6;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			content: '';
+			display: block;
+			height: 18px;
+			position: absolute;
+			right: -0.8%;
+			top: 18px;
+			width: 18px;
+			z-index: 20;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.timeline {
+		padding-bottom: 0px;
+
+		.note-bg {
+			width: 100%;
+		}
+	}
+}

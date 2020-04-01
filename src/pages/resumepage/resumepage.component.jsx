@@ -21,7 +21,7 @@ class ResumePage extends React.Component {
 			<section id='resume' className='section-padding'>
 				<div className='container'>
 					<div className='section-title text-center'>
-						<h2>PORTFOLIO.</h2>
+						<h2>RESUME.</h2>
 					</div>
 					{resume.map(({ id, ...otherResumeProps }) => (
 						<ResumePreview key={id} {...otherResumeProps} />
