@@ -1,0 +1,34 @@
+@mixin navbar-hover-effect {
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(46, 43, 43);
+	position: relative;
+	font-family: Raleway, sans-serif;
+	padding: 5px;
+	transition: all 0.15s ease-in-out 0s;
+	z-index: 2;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: calc(100% - 8px);
+		height: 11px;
+		bottom: 6px;
+		left: 0px;
+		z-index: -1;
+		transform: scaleX(0);
+		transform-origin: right center 0px;
+		background: rgba(255, 255, 149, 0.8);
+		transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+	}
+
+	&:hover {
+		color: rgb(255, 255, 255);
+
+		&::after {
+			transform: scaleX(1);
+			transform-origin: left center 0px;
+			transition: transform 0.35s cubic-bezier(0.43, 0.49, 0.51, 0.68) 0s;
+		}
+	}
+}

@@ -1,8 +1,45 @@
-footer {
-	font-size: 14px;
-	padding: 60px 0px;
-	margin: 0px;
-	text-align: center;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.8);
+@import '../../assets/scss/navbar-hovereffect.scss';
+
+#footer {
+	padding: 40px 5% 40px 5%;
+	color: #666666;
+
+	#connect a {
+		color: rgba(255, 255, 149, 0.8);
+		margin-bottom: 11px;
+	}
+
+	.copy-right {
+		color: #ffffff;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	#nav-footer {
+		display: inline-block;
+		flex-direction: row;
+		padding-right: 9px;
+
+		ul li {
+			display: inline-block;
+			flex-direction: row;
+			padding-right: 9px;
+
+			@include navbar-hover-effect;
+		}
+	}
+
+	#nav-footer-bottom {
+		margin-top: 30px;
+	}
+
+	.social_links ul li {
+		padding-right: 15px;
+
+		img {
+			width: 30px;
+		}
+	}
 }

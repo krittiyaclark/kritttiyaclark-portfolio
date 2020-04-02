@@ -81,11 +81,6 @@ class Header extends React.Component {
 								Resume
 							</a>
 						</li>
-						<li className='nav-item'>
-							<a className='nav-link' href='#contact'>
-								Contact
-							</a>
-						</li>
 					</ul>
 
 					<div className='social_links ml-auto'>

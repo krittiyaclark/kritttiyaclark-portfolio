@@ -5,7 +5,6 @@ import AboutPage from './pages/aboutpage/aboutpage.component';
 import SkillsPage from './pages/skillspage/skillspage.component';
 import PortfolioPage from './pages/portfoliopage/portfoliopage.component';
 import ResumePage from './pages/resumepage/resumepage.component';
-import ContactPage from './pages/contactpage/contactpage.component';
 import FooterPage from './pages/footerpage/footerpage.component';
 
 import Header from './components/header/header.component';
@@ -21,7 +20,6 @@ function App() {
 			<SkillsPage />
 			<PortfolioPage />
 			<ResumePage />
-			<ContactPage />
 			<FooterPage />
 			<button id='scrollTop'>
 				<a href='#home'>↑</a>
