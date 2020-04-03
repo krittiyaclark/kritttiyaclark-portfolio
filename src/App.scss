@@ -1,3 +1,5 @@
+@import '../src/assets/scss/color.scss';
+
 main {
 	#home,
 	#about,
@@ -21,19 +23,19 @@ main {
 		height: 100vh;
 	}
 	#about {
-		background-color: lightseagreen;
+		background-color: #ffff;
 	}
 	#portfolio {
-		background-color: lightcoral;
+		@include background-color-darkgrey;
 	}
 	#skills {
-		background: #f6f6f6 none repeat scroll 0 0;
+		@include background-color-grey;
 	}
 	#resume {
 		background-color: #efefef;
 	}
 	#footer {
-		background: rgba(0, 0, 0, 0.8);
+		@include background-color-darkgrey;
 	}
 
 	#scrollTop {

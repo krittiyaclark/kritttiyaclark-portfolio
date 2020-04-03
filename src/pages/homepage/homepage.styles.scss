@@ -1,26 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-.homepage {
-	color: #ffffff;
+#home-header {
+	height: 100vh;
+	display: flex;
+	align-items: center;
 
-	.home-content {
-		height: 100%;
-		position: absolute;
-		width: 100%;
+	&.header-contianer {
+		max-width: 960px;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		margin: auto;
 		text-align: center;
 
-		.text-center {
-			vertical-align: middle;
-			display: table-cell;
-			min-width: 300px;
+		.fullscreen-video-wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+
+			.video {
+				min-width: 100%;
+				max-height: 100%;
+			}
 		}
 	}
+}
+
+.header-overlay {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: teal;
+	z-index: 1;
+	opacity: 0.85;
+}
+
+.home-content {
+	// height: 100%;
+	// position: absolute;
+	// width: 100%;
+	// text-align: center;
+	margin: auto;
+	z-index: 2;
+
+	// .text-center {
+	// 	vertical-align: middle;
+	// 	display: table-cell;
+	// 	min-width: 300px;
 
 	.header {
 		padding: 20px;
 		max-width: 850px;
-		margin-left: auto;
-		margin-right: auto;
 		color: #ffffff;
 
 		.heading h2 {
@@ -33,15 +67,19 @@
 			letter-spacing: 1px;
 		}
 
-		.box-bg a {
-			font-family: 'Oswald', helvetica, arial, sans-serif;
-			background: rgba(255, 255, 149, 0.8);
-			display: inline-block;
-			margin: 50px;
-			font-weight: 400;
-			font-size: 22px;
-			padding: 15px;
-			color: #000;
+		.box-bg {
+			display: grid;
+
+			a {
+				font-family: 'Oswald', helvetica, arial, sans-serif;
+				background: rgba(255, 255, 149, 0.8);
+				display: inline-block;
+				margin: 0 auto;
+				font-weight: 400;
+				font-size: 22px;
+				padding: 15px;
+				color: #000;
+			}
 		}
 	}
 }

@@ -13,11 +13,16 @@
 	@include navbar-hover-effect;
 }
 
+.navbar-brand {
+	z-index: 2;
+}
+
 .social_links {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	padding: 0.5rem 1rem;
+	z-index: 2;
 
 	ul li {
 		display: inline-block;
@@ -25,7 +30,7 @@
 		padding-right: 9px;
 
 		img {
-			width: 50px;
+			width: 35px;
 			height: auto;
 			cursor: pointer;
 
