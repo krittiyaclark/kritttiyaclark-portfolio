@@ -3,6 +3,8 @@ import React from 'react';
 import linkedinIcon from '../../assets/icons/icons8-linkedin-208.png';
 import twitterIcon from '../../assets/icons/icons8-twitter-250.png';
 import githubIcon from '../../assets/icons/icons8-github-208.png';
+import mailIcon from '../../assets/icons/icons8-envelope-52.png';
+
 import './header.styles.scss';
 
 class Header extends React.Component {
@@ -13,20 +15,27 @@ class Header extends React.Component {
 			socialLinks: [
 				{
 					id: 1,
+					name: 'Mail',
+					icon: mailIcon,
+					url: 'https://twitter.com/themeyourweb',
+					alt: 'Mail'
+				},
+				{
+					id: 2,
 					name: 'LinkedIn',
 					icon: linkedinIcon,
 					url: 'https://www.linkedin.com/in/krittiya-clark-front-end/',
 					alt: 'LinkedIn'
 				},
 				{
-					id: 2,
+					id: 3,
 					name: 'GitHub',
 					icon: githubIcon,
 					url: 'https://github.com/krittiyaclark',
 					alt: 'GitHub'
 				},
 				{
-					id: 3,
+					id: 4,
 					name: 'Twitter',
 					icon: twitterIcon,
 					url: 'https://twitter.com/themeyourweb',
@@ -40,7 +49,7 @@ class Header extends React.Component {
 		const { socialLinks } = this.state;
 
 		return (
-			<nav className='navbar navbar-expand-lg navbar-light bg-light'>
+			<nav className='navbar  fixed-top navbar-expand-lg navbar-light'>
 				<a className='navbar-brand' href='/'>
 					KC
 				</a>

@@ -12,7 +12,7 @@ const HomePage = () => (
 				<source src={video} type='video/mp4' />
 			</video>
 		</div>
-		<div className='header-overlay'></div>
+		{/* <div className='header-overlay'></div> */}
 		{/* <div className='homepage'> */}
 		<div className='home-content'>
 			{/* <div className='contianer d-flex h-100'>

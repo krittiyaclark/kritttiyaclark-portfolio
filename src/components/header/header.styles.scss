@@ -1,20 +1,25 @@
 @import '../../assets/scss/navbar-hovereffect.scss';
 
-.navbar-light .navbar-nav li a {
-	font-size: 16px;
-	font-weight: 700;
-	color: rgb(46, 43, 43);
-	position: relative;
-	font-family: Raleway, sans-serif;
-	padding: 5px;
-	transition: all 0.15s ease-in-out 0s;
-	z-index: 2;
+.navbar-light {
+	.navbar-nav .nav-link {
+		font-size: 16px;
+		font-weight: 700;
+		color: #ffffff;
+		position: relative;
+		font-family: Raleway, sans-serif;
+		padding: 5px;
+		transition: all 0.15s ease-in-out 0s;
+		z-index: 2;
 
-	@include navbar-hover-effect;
-}
+		@include navbar-hover-effect;
+	}
 
-.navbar-brand {
-	z-index: 2;
+	.navbar-toggler,
+	.navbar-nav .active > .nav-link,
+	.navbar-brand {
+		color: #ffffff;
+		z-index: 4;
+	}
 }
 
 .social_links {
@@ -39,5 +44,23 @@
 				transform: scale(1.1);
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.home-content {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar .navbar-collapse {
+		background-color: #3b3f50;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0) inset;
+		margin-top: 15px;
+		text-align: center;
+		max-height: 400px;
+		z-index: 2;
+		margin-right: -16px;
+		margin-left: -16px;
 	}
 }
