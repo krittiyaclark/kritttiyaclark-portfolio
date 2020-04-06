@@ -1,24 +1,32 @@
 @import '../../assets/scss/navbar-hovereffect.scss';
 
-.navbar-light {
-	.navbar-nav .nav-link {
-		font-size: 16px;
-		font-weight: 700;
-		color: #ffffff;
-		position: relative;
-		font-family: Raleway, sans-serif;
-		padding: 5px;
-		transition: all 0.15s ease-in-out 0s;
-		z-index: 2;
+.navbar {
+	padding: 1.5rem 1rem;
 
-		@include navbar-hover-effect;
-	}
+	&.navbar-light {
+		.navbar-nav .nav-link {
+			font-size: 16px;
+			font-weight: 700;
+			color: #ffffff;
+			position: relative;
+			font-family: Raleway, sans-serif;
+			padding: 5px;
+			transition: all 0.15s ease-in-out 0s;
+			z-index: 2;
 
-	.navbar-toggler,
-	.navbar-nav .active > .nav-link,
-	.navbar-brand {
-		color: #ffffff;
-		z-index: 4;
+			@include navbar-hover-effect;
+		}
+
+		.navbar-toggler,
+		.navbar-nav .active > .nav-link,
+		.navbar-brand {
+			color: #ffffff;
+			z-index: 4;
+		}
+
+		.navbar-brand {
+			margin-right: 5rem;
+		}
 	}
 }
 
@@ -56,11 +64,16 @@
 	.navbar .navbar-collapse {
 		background-color: #3b3f50;
 		box-shadow: 0 1px 0 rgba(0, 0, 0, 0) inset;
-		margin-top: 15px;
+		margin-top: 27px;
 		text-align: center;
 		max-height: 400px;
 		z-index: 2;
 		margin-right: -16px;
 		margin-left: -16px;
+	}
+
+	.copy-right,
+	.social_links .ml-auto.text-right ul {
+		text-align: center;
 	}
 }

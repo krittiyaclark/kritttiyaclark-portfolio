@@ -1,0 +1,65 @@
+// The colors, children!
+$color-bg: #fff9f2;
+$color-white: #ffffff;
+$color-gray-dark: #515151;
+
+$color-hexagon: $color-white;
+$color-circle: $color-gray-dark;
+
+$font-header: 'Fredoka One', sans-serif;
+
+// Hexagon dimensions
+$hex-width: 70px;
+$hex-height: 43.19px;
+$hex-border-TB: 23.09px;
+$hex-border-LR: 36px;
+
+// Circle dimensions
+$circle-size: 19px;
+
+#hexagon {
+	position: relative;
+	width: $hex-width;
+	height: $hex-height;
+	margin: auto;
+	background-color: $color-hexagon;
+	transform: translateZ(0);
+	z-index: 2;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		border-left: $hex-border-LR solid transparent;
+		border-right: $hex-border-LR solid transparent;
+	}
+	&:before {
+		bottom: 100%;
+		border-bottom: $hex-border-TB solid $color-hexagon;
+	}
+	&:after {
+		top: 100%;
+		width: 0;
+		border-top: $hex-border-TB solid $color-hexagon;
+	}
+}
+
+#circle {
+	position: absolute;
+	bottom: -$circle-size/2;
+	right: -$circle-size/2;
+	margin: auto;
+	width: $circle-size;
+	height: $circle-size;
+	background-color: $color-circle;
+	border-radius: 100%;
+	z-index: 3;
+	box-shadow: $color-bg 0 0 0 4px;
+
+	h2 {
+		position: absolute;
+		top: -32px;
+		left: -47px;
+		color: $color-gray-dark;
+	}
+}
