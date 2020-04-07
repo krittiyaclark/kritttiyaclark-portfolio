@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Typing from 'react-typing-animation';
+
 import video from '../../assets/video/video.mp4';
 
 import './homepage.styles.scss';
@@ -12,15 +14,13 @@ const HomePage = () => (
 				<source src={video} type='video/mp4' />
 			</video>
 		</div>
-		{/* <div className='header-overlay'></div> */}
-		{/* <div className='homepage'> */}
+
 		<div className='home-content'>
-			{/* <div className='contianer d-flex h-100'>
-				<div className='row justify-content-center align-items-center w-100'>
-					<div className='col-md-12 col-xs-12 mx-auto'> */}
 			<div className='header'>
 				<div className='heading'>
-					<h2>Krittiya Clark</h2>
+					<Typing speed={200}>
+						<h2>Krittiya Clark</h2>
+					</Typing>
 				</div>
 				<div className='box-bg'>
 					<a
@@ -31,10 +31,6 @@ const HomePage = () => (
 				</div>
 			</div>
 		</div>
-		{/* </div>
-			</div>
-		</div> */}
-		{/* </div> */}
 	</header>
 );
 
