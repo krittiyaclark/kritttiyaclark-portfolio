@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import linkedinIcon from '../../assets/icons/icons8-linkedin-208.png';
-import twitterIcon from '../../assets/icons/icons8-twitter-250.png';
-import githubIcon from '../../assets/icons/icons8-github-208.png';
+import linkedinIcon from '../../assets/icons/icons8-linkedin-208.png'
+import twitterIcon from '../../assets/icons/icons8-twitter-250.png'
+import githubIcon from '../../assets/icons/icons8-github-208.png'
 
-import '../../assets/scss/logo.scss';
-import './header.styles.scss';
+import '../../assets/scss/logo.scss'
+import './header.styles.scss'
 
 class Header extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.state = {
 			socialLinks: [
@@ -18,31 +18,58 @@ class Header extends React.Component {
 					name: 'LinkedIn',
 					icon: linkedinIcon,
 					url: 'https://www.linkedin.com/in/krittiya-clark-front-end/',
-					alt: 'LinkedIn'
+					alt: 'LinkedIn',
 				},
 				{
 					id: 2,
 					name: 'GitHub',
 					icon: githubIcon,
 					url: 'https://github.com/krittiyaclark',
-					alt: 'GitHub'
+					alt: 'GitHub',
 				},
 				{
 					id: 3,
 					name: 'Twitter',
 					icon: twitterIcon,
 					url: 'https://twitter.com/themeyourweb',
-					alt: 'Twitter'
+					alt: 'Twitter',
+				},
+			],
+			status: 'top',
+			listener: null,
+		}
+	}
+
+	componentDidMount() {
+		this.listener = document.addEventListener('scroll', (event) => {
+			var scrolled = document.scrollingElement.scrollTop
+			if (scrolled >= 120) {
+				if (this.state.status !== 'something') {
+					this.setState({ status: 'something' })
 				}
-			]
-		};
+			} else {
+				if (this.state.status !== 'top') {
+					this.setState({ status: 'top' })
+				}
+			}
+		})
+	}
+
+	componentDidUpdate() {
+		document.removeEventListener('scroll', this.state.listener)
 	}
 
 	render() {
-		const { socialLinks } = this.state;
+		const { socialLinks } = this.state
 
 		return (
-			<nav className='navbar fixed-top navbar-expand-lg navbar-light'>
+			<nav
+				className='navbar fixed-top navbar-expand-lg navbar-light'
+				style={{
+					backgroundColor:
+						this.state.status === 'top' ? 'transparent' : '#f4c430',
+					position: 'fixed',
+				}}>
 				<a className='navbar-brand' href='/'>
 					<div id='hexagon'>
 						<div id='circle'>
@@ -62,7 +89,7 @@ class Header extends React.Component {
 				</button>
 				<div className='collapse navbar-collapse' id='navbarNav'>
 					<ul className='navbar-nav'>
-						<li className='nav-item active'>
+						<li className='nav-item'>
 							<a className='nav-link' href='/'>
 								Home <span className='sr-only'>(current)</span>
 							</a>
@@ -91,7 +118,7 @@ class Header extends React.Component {
 
 					<div className='social_links ml-auto'>
 						<ul className='list-unstyled'>
-							{socialLinks.map(link => (
+							{socialLinks.map((link) => (
 								<li key={link.id}>
 									<a href={link.url} rel='noopener noreferrer' target='_blank'>
 										<img src={link.icon} alt={link.alt} />
@@ -102,8 +129,8 @@ class Header extends React.Component {
 					</div>
 				</div>
 			</nav>
-		);
+		)
 	}
 }
 
-export default Header;
+export default Header

@@ -1,14 +1,14 @@
 @import '../../assets/scss/navbar-hovereffect.scss';
+@import '../../assets/scss/color.scss';
 
 .navbar {
 	padding: 1.5rem 1rem;
-	background-color: #474d5d;
 
 	&.navbar-light {
 		.navbar-nav .nav-link {
 			font-size: 16px;
 			font-weight: 700;
-			color: #ffffff;
+			color: $primary-color;
 			position: relative;
 			font-family: Raleway, sans-serif;
 			padding: 5px;
@@ -21,7 +21,7 @@
 		.navbar-toggler,
 		.navbar-nav .active > .nav-link,
 		.navbar-brand {
-			color: #ffffff;
+			color: $white-color;
 			z-index: 4;
 		}
 
@@ -63,7 +63,7 @@
 	}
 
 	.navbar .navbar-collapse {
-		background-color: #3b3f50;
+		background-color: $primary-color;
 		box-shadow: 0 1px 0 rgba(0, 0, 0, 0) inset;
 		margin-top: 27px;
 		text-align: center;

@@ -19,3 +19,7 @@ body {
 		background-size: auto;
 	}
 }
+
+.flex {
+	display: flex;
+}

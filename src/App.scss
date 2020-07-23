@@ -32,10 +32,10 @@ main {
 		@include background-color-grey;
 	}
 	#resume {
-		background-color: #efefef;
+		@include background-color-grey;
 	}
 	#footer {
-		@include background-color-darkgrey;
+		@include primary-background-color;
 	}
 
 	#scrollTop {

@@ -1,18 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import Typing from 'react-typing-animation';
+import Typing from 'react-typing-animation'
 
-import video from '../../assets/video/video.mp4';
+import video from '../../assets/video/video.mp4'
 
-import './homepage.styles.scss';
-import '../../assets/scss/buttons.scss';
+import './homepage.styles.scss'
+import '../../assets/scss/buttons.scss'
 
 const HomePage = () => (
 	<header id='home-header' className='header-contianer'>
-		<div className='fullscreen-video-wrap'>
-			<video className='video' autoPlay='autoplay' loop='loop' muted>
+		<div className='fullscreen-wrap'>
+			{/* <video className='video' autoPlay='autoplay' loop='loop' muted>
 				<source src={video} type='video/mp4' />
-			</video>
+			</video> */}
+			<div className='hero'></div>
 		</div>
 
 		<div className='home-content'>
@@ -32,6 +33,6 @@ const HomePage = () => (
 			</div>
 		</div>
 	</header>
-);
+)
 
-export default HomePage;
+export default HomePage

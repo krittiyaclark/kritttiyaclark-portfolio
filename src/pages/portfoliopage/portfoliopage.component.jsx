@@ -1,45 +1,62 @@
-import React from 'react';
+import React from 'react'
 
-import { PortfolioPreview } from '../../components/portfoliopreview/portfoliopreview.component';
+import { PortfolioPreview } from '../../components/portfoliopreview/portfoliopreview.component'
 
-import './portfoliopage.styles.scss';
+import project01 from '../../assets/images/beach-resort-react-app.jpg'
+
+import './portfoliopage.styles.scss'
 
 class PortfolioPage extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.state = {
 			portfolios: [
 				{
 					id: 1,
-					image: 'https://via.placeholder.com/350',
+					image: project01,
 					title: 'front end',
-					stack: ['HTML5', 'CSS3 | SCSS', 'JavaScript', 'React'],
-					view: 'View Details',
-					url: 'https://pomodoro-tracker.com'
+					stack: [
+						'HTML5',
+						'CSS3 | SCSS',
+						'JavaScript',
+						'React',
+						'ContextApi',
+						'Hooks',
+						'Netlify',
+					],
+					view: 'Project',
+					liveProjectUrl: 'https://beach-resort-react-app-live.netlify.app',
+					gitHub: 'GitHub',
+					projectGitHubUrl:
+						'https://github.com/krittiyaclark/beach-resort-react',
 				},
 				{
 					id: 2,
 					image: 'https://via.placeholder.com/350',
 					title: 'database',
 					stack: ['firebase'],
-					view: 'View Details',
-					url: ''
+					view: 'Project',
+					liveProjectUrl: '',
+					gitHub: 'GitHub',
+					projectGitHubUrl: '',
 				},
 				{
 					id: 3,
 					title: 'deployment',
 					image: 'https://via.placeholder.com/350',
 					stack: ['AWS ECS', 'Heroku', 'GitHub'],
-					view: 'View Details',
-					url: ''
-				}
-			]
-		};
+					view: 'Project',
+					liveProjectUrl: '',
+					gitHub: 'GitHub',
+					projectGitHubUrl: '',
+				},
+			],
+		}
 	}
 
 	render() {
-		const { portfolios } = this.state;
+		const { portfolios } = this.state
 		return (
 			<section id='portfolio' className='section-padding'>
 				<div className='container'>
@@ -49,8 +66,8 @@ class PortfolioPage extends React.Component {
 					<PortfolioPreview portfolioPreview={portfolios} />
 				</div>
 			</section>
-		);
+		)
 	}
 }
 
-export default PortfolioPage;
+export default PortfolioPage

@@ -1,16 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import browserIcon from '../../assets/icons/icons8-open-in-browser-26.png';
-import databaseIcon from '../../assets/icons/icons8-database-26.png';
-import deploymentIcon from '../../assets/icons/icons8-clouds-26.png';
+import browserIcon from '../../assets/icons/icons8-open-in-browser-26.png'
+import databaseIcon from '../../assets/icons/icons8-database-26.png'
+import deploymentIcon from '../../assets/icons/icons8-clouds-26.png'
 
-import { SkillPreview } from '../../components/skillPreview/skillPreview.component';
+import { SkillPreview } from '../../components/skillPreview/skillPreview.component'
 
-import './skillspage.styles.scss';
+import './skillspage.styles.scss'
 
 class SkillsPage extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.state = {
 			skills: [
@@ -18,26 +18,26 @@ class SkillsPage extends React.Component {
 					id: 1,
 					icon: browserIcon,
 					title: 'front end',
-					subSkill: ['HTML5', 'CSS3 | SCSS', 'JavaScript', 'React']
+					subSkill: ['HTML5', 'CSS3 | SCSS', 'JavaScript', 'React'],
 				},
 				{
 					id: 2,
 					icon: databaseIcon,
 					title: 'database',
-					subSkill: ['firebase']
+					subSkill: ['Firebase', 'Strapi'],
 				},
 				{
 					id: 3,
 					icon: deploymentIcon,
 					title: 'deployment',
-					subSkill: ['AWS ECS', 'Heroku', 'GitHub']
-				}
-			]
-		};
+					subSkill: ['Heroku', 'GitHub', 'Firebase', 'Netlify'],
+				},
+			],
+		}
 	}
 
 	render() {
-		const { skills } = this.state;
+		const { skills } = this.state
 		return (
 			<section id='skills' className='section-padding'>
 				<div className='container'>
@@ -47,8 +47,8 @@ class SkillsPage extends React.Component {
 					<SkillPreview skills={skills}></SkillPreview>
 				</div>
 			</section>
-		);
+		)
 	}
 }
 
-export default SkillsPage;
+export default SkillsPage

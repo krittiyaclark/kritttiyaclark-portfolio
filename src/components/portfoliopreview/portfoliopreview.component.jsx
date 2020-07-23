@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import './portfoliopreview.styles.scss';
+import './portfoliopreview.styles.scss'
 
-export const PortfolioPreview = props => (
+export const PortfolioPreview = ({ portfolioPreview }) => (
 	<div className='row'>
-		{props.portfolioPreview.map(portfolio => (
+		{portfolioPreview.map((portfolio) => (
 			<div className='col-md-4 col-sm-6' key={portfolio.id}>
 				<div className='card text-center box'>
 					<div className='flip-card'>
@@ -32,13 +32,23 @@ export const PortfolioPreview = props => (
 									Some quick example text to build on the card title and make up
 									the bulk of the card's content.
 								</p>
-								<a
-									href={portfolio.url}
-									rel='noopener noreferrer'
-									target='_blank'
-									className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
-									{portfolio.view}
-								</a>
+
+								<div className='flex'>
+									<a
+										href={portfolio.liveProjectUrl}
+										rel='noopener noreferrer'
+										target='_blank'
+										className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
+										{portfolio.view}
+									</a>
+									<a
+										href={portfolio.projectGitHubUrl}
+										rel='noopener noreferrer'
+										target='_blank'
+										className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
+										{portfolio.gitHub}
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -46,4 +56,4 @@ export const PortfolioPreview = props => (
 			</div>
 		))}
 	</div>
-);
+)

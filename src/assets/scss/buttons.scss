@@ -16,10 +16,10 @@
 	text-decoration: none;
 	color: white;
 	transition: color 0.5s ease;
-	border-right: solid #ffd512 10px;
+	border-right: solid #ff8928 10px;
 
 	&:hover {
-		color: #ffd512;
+		color: #ff8928;
 	}
 }
 
@@ -47,7 +47,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: #ffd512;
+		background: #ff8928;
 		-webkit-transform: scaleX(0);
 		transform: scaleX(0);
 		-webkit-transform-origin: 100% 50%;
