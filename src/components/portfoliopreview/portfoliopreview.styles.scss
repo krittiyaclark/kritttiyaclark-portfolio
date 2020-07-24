@@ -30,6 +30,11 @@
 	.flip-card-front {
 		background-color: #fff;
 		color: black;
+
+		.card-title {
+			margin-bottom: 1.75rem;
+			margin-top: 1.75rem;
+		}
 	}
 
 	.flip-card-back {
@@ -63,7 +68,6 @@
 
 	.button-center {
 		display: table;
-
 		margin: 0 auto;
 	}
 }

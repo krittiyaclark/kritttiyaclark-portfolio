@@ -1,22 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-import './aboutpage.styles.scss';
+import images from '../../assets/images/Krittiya_Clark.jpg'
+
+import './aboutpage.styles.scss'
 
 class AboutPage extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.state = {
-			isOpen: true
-		};
+			isOpen: true,
+		}
 
-		this.handleClick = this.handleClick.bind(this);
+		this.handleClick = this.handleClick.bind(this)
 	}
 
 	handleClick() {
-		this.setState(state => ({
-			isOpen: !state.isOpen
-		}));
+		this.setState((state) => ({
+			isOpen: !state.isOpen,
+		}))
 	}
 
 	render() {
@@ -34,11 +36,7 @@ class AboutPage extends React.Component {
 					<div className='row'>
 						<div className='col-md-4 col-xs-4'>
 							<div className='about-img'>
-								<img
-									src='https://via.placeholder.com/350'
-									alt='Krittiya Clark'
-									className='img-fluid'
-								/>
+								<img src={images} alt='Krittiya Clark' className='img-fluid' />
 							</div>
 						</div>
 						<div className='col-md-8 col-xs-8'>
@@ -71,8 +69,8 @@ class AboutPage extends React.Component {
 					</div>
 				</div>
 			</section>
-		);
+		)
 	}
 }
 
-export default AboutPage;
+export default AboutPage

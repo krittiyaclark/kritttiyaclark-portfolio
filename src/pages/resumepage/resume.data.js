@@ -5,11 +5,25 @@ const RESUME_DATA = [
 		items: [
 			{
 				id: 1,
+				name: 'Improving Web Developement Skills',
+				subName: 'Build Projects',
+				description:
+					'I have been learing JavaScript and React during this period of time. Please check my projects to see what I have done.',
+				date: 'Jan 2020 - Present',
+			},
+		],
+	},
+	{
+		id: 2,
+		title: 'Experiences',
+		items: [
+			{
+				id: 1,
 				name: 'Web Developer',
 				subName: 'VTDigger',
 				description:
-					'Troubleshoot, resolve, build applications, optimization page-speed, create vector graphic SVG, build UI, manipulate and implementation WordPress Web Platform Write Google app scripts to manipulate Mail Chimp API',
-				date: 'Feb 2019 to Dec 2019'
+					'Troubleshoot, resolve, build applications, optimization page-speed, create vector graphic SVG, build UI, manipulate and implementation WordPress Web Platform. Write Google app scripts to manipulate Mail Chimp API',
+				date: 'Feb 2019 to Dec 2019',
 			},
 			{
 				id: 2,
@@ -17,12 +31,12 @@ const RESUME_DATA = [
 				subName: 'Dealer.com',
 				description:
 					'Troubleshoot, resolved and implemented CMS Web Platform. Performed quality assurance to ensure work is performed per specifications and met both functional and aesthetic standards',
-				date: 'Aug 2018 to Dec 2018'
-			}
-		]
+				date: 'Aug 2018 to Dec 2018',
+			},
+		],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Certificate',
 		items: [
 			{
@@ -31,7 +45,7 @@ const RESUME_DATA = [
 				subName: 'Udemy',
 				description:
 					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
-				date: 'Jan 2018 to Mar 2018'
+				date: 'Jan 2020 to Mar 2020',
 			},
 			{
 				id: 2,
@@ -39,20 +53,20 @@ const RESUME_DATA = [
 				subName: 'Udacity',
 				description:
 					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
-				date: 'Dec 2019 to Mar 2020'
-			}
-			// {
-			// 	id: 3,
-			// 	name: 'Film/Cinema/Video Studies',
-			// 	subName: 'School of Visual Arts',
-			// 	description:
-			// 		'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
-			// 	date: ' Jun 2019 to Sep 2010'
-			// }
-		]
+				date: 'Dec 2018 to Mar 2018',
+			},
+			{
+				id: 4,
+				name: 'Film/Cinema/Video Studies',
+				subName: 'School of Visual Arts',
+				description:
+					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
+				date: ' Jun 2009 to Sep 2010',
+			},
+		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Education',
 		items: [
 			{
@@ -61,10 +75,10 @@ const RESUME_DATA = [
 				subName: 'Bachelor of Arts - BA',
 				description:
 					'malesuada bibendumTristique nulla aliquet enim tortor at auctor urna nunc idPulvinar etiam non quam lacus suspendisseHabitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorperEnim tortor at auctor urna nunc id cursus metus aliquam.',
-				date: 'Apr 1999 to Apr 2003'
-			}
-		]
-	}
-];
+				date: 'Apr 1999 to Apr 2003',
+			},
+		],
+	},
+]
 
-export default RESUME_DATA;
+export default RESUME_DATA

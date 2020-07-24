@@ -2,17 +2,12 @@ import React from 'react'
 
 import Typing from 'react-typing-animation'
 
-import video from '../../assets/video/video.mp4'
-
 import './homepage.styles.scss'
 import '../../assets/scss/buttons.scss'
 
 const HomePage = () => (
 	<header id='home-header' className='header-contianer'>
 		<div className='fullscreen-wrap'>
-			{/* <video className='video' autoPlay='autoplay' loop='loop' muted>
-				<source src={video} type='video/mp4' />
-			</video> */}
 			<div className='hero'></div>
 		</div>
 
