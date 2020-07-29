@@ -1,3 +1,5 @@
+@import '../../assets/scss/color.scss';
+
 .flip-card {
 	background-color: transparent;
 	width: 350px;
@@ -28,8 +30,8 @@
 	}
 
 	.flip-card-front {
-		background-color: #fff;
-		color: black;
+		background-color: $smoke-color;
+		color: $almostBlack-color;
 
 		.card-title {
 			margin-bottom: 1.75rem;
@@ -38,7 +40,7 @@
 	}
 
 	.flip-card-back {
-		background-color: #f4c430;
+		background-color: $gold-color;
 		transform: rotateY(180deg);
 		padding: 1.25rem;
 
@@ -55,11 +57,24 @@
 			margin-right: 9px;
 		}
 	}
-}
 
-.in-line {
-	display: inline-block;
-	padding: 5px;
+	.card-body {
+		li {
+			padding-right: 9px;
+		}
+
+		h5 {
+			text-align: initial;
+			color: $gold-color;
+
+			span {
+				color: $almostBlack-color;
+				font-size: 16px;
+				font-weight: normal;
+				text-align: initial;
+			}
+		}
+	}
 }
 
 .box {

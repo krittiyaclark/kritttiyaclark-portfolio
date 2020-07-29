@@ -16,14 +16,18 @@ export const PortfolioPreview = ({ portfolioPreview }) => (
 									className='card-img-top img-fluid'
 								/>
 								<div className='card-body'>
-									<h5 className='card-title'>
+									<h4 className='card-title'>
 										{portfolio.title.toUpperCase()}
+									</h4>
+									<ul className='list-unstyled flex-wrap'>
+										<h5>Stack: </h5>
+										{portfolio.stack.map((item, i) => (
+											<li key={i}>{item}</li>
+										))}
+									</ul>
+									<h5>
+										Deployment: <span>{portfolio.deployment}</span>
 									</h5>
-									{portfolio.stack.map((item, i) => (
-										<ul className='list-unstyled in-line' key={i}>
-											<li>{item}</li>
-										</ul>
-									))}
 								</div>
 							</div>
 
@@ -35,14 +39,14 @@ export const PortfolioPreview = ({ portfolioPreview }) => (
 										href={portfolio.liveProjectUrl}
 										rel='noopener noreferrer'
 										target='_blank'
-										className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
+										className='button-center text-center button-hover hvr-sweep-to-left'>
 										{portfolio.view}
 									</a>
 									<a
 										href={portfolio.projectGitHubUrl}
 										rel='noopener noreferrer'
 										target='_blank'
-										className='btn btn-outline-secondary button button-center text-center button-hover hvr-sweep-to-left'>
+										className='button-center text-center button-hover hvr-sweep-to-left'>
 										{portfolio.gitHub}
 									</a>
 								</div>

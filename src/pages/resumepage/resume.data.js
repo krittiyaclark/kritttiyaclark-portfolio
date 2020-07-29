@@ -8,7 +8,7 @@ const RESUME_DATA = [
 				name: 'Improving Web Developement Skills',
 				subName: 'Build Projects',
 				description:
-					'I have been learing JavaScript and React during this period of time. Please check my projects to see what I have done.',
+					'I have been learning JavaScript and React for some time now. Please check out my projects to see what I have accomplished.',
 				date: 'Jan 2020 - Present',
 			},
 		],
@@ -43,24 +43,21 @@ const RESUME_DATA = [
 				id: 1,
 				name: 'Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)',
 				subName: 'Udemy',
-				description:
-					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
+				description: null,
 				date: 'Jan 2020 to Mar 2020',
 			},
 			{
 				id: 2,
 				name: 'Front End Web Developer Nanodegree Program',
 				subName: 'Udacity',
-				description:
-					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
+				description: null,
 				date: 'Dec 2018 to Mar 2018',
 			},
 			{
 				id: 4,
 				name: 'Film/Cinema/Video Studies',
 				subName: 'School of Visual Arts',
-				description:
-					'malesuada bibendum Tristique nulla aliquet enim tortor at auctor urna nunc id Pulvinar etiam non quam lacus suspendisse Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper Enim tortor at auctor urna nunc id cursus metus aliquam',
+				description: null,
 				date: ' Jun 2009 to Sep 2010',
 			},
 		],
@@ -73,8 +70,7 @@ const RESUME_DATA = [
 				id: 1,
 				name: ' Suan Sunan dha Rajabhat University in Fine and App lied Art',
 				subName: 'Bachelor of Arts - BA',
-				description:
-					'malesuada bibendumTristique nulla aliquet enim tortor at auctor urna nunc idPulvinar etiam non quam lacus suspendisseHabitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorperEnim tortor at auctor urna nunc id cursus metus aliquam.',
+				description: null,
 				date: 'Apr 1999 to Apr 2003',
 			},
 		],

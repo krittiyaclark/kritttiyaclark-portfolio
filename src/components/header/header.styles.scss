@@ -6,11 +6,7 @@
 
 	&.navbar-light {
 		.navbar-nav .nav-link {
-			font-size: 16px;
-			font-weight: 700;
-			color: $primary-color;
 			position: relative;
-			font-family: Raleway, sans-serif;
 			padding: 5px;
 			transition: all 0.15s ease-in-out 0s;
 			z-index: 2;
@@ -41,7 +37,7 @@
 	ul li {
 		display: inline-block;
 		flex-direction: row;
-		padding-right: 9px;
+		padding-right: 24px;
 
 		img {
 			width: 35px;

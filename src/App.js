@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import HomePage from './pages/homepage/homepage.component';
-import AboutPage from './pages/aboutpage/aboutpage.component';
-import SkillsPage from './pages/skillspage/skillspage.component';
-import PortfolioPage from './pages/portfoliopage/portfoliopage.component';
-import ResumePage from './pages/resumepage/resumepage.component';
-import FooterPage from './pages/footerpage/footerpage.component';
+import HomePage from './pages/homepage/homepage.component'
+import AboutPage from './pages/aboutpage/aboutpage.component'
+import SkillsPage from './pages/skillspage/skillspage.component'
+import PortfolioPage from './pages/portfoliopage/portfoliopage.component'
+import ResumePage from './pages/resumepage/resumepage.component'
+import FooterPage from './pages/footerpage/footerpage.component'
 
-import Header from './components/header/header.component';
+import Header from './components/header/header.component'
 
-import './App.scss';
+import './App.scss'
 
 function App() {
 	return (
-		<main>
+		<main id='main'>
 			<Header />
 			<HomePage />
 			<AboutPage />
@@ -25,7 +25,7 @@ function App() {
 				<a href='#home'>↑</a>
 			</button>
 		</main>
-	);
+	)
 }
 
-export default App;
+export default App

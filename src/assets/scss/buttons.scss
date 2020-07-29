@@ -1,3 +1,5 @@
+@import '../scss/color.scss';
+
 .button {
 	text-transform: uppercase;
 	display: inline-block;
@@ -5,21 +7,27 @@
 	position: relative;
 	font-weight: 700;
 	font-size: 12px;
-	color: #333;
+	color: $smoke-color;
 	letter-spacing: 1px;
+	border: 2px solid $gold-color;
+
+	&:hover {
+		background-color: $orange-color;
+		transition: color 0.5s ease;
+	}
 }
 
 .button-hover {
 	display: inline-block;
 	padding: 1em;
-	background-color: #000;
+	background-color: transparent;
 	text-decoration: none;
-	color: white;
+	color: $smoke-color;
 	transition: color 0.5s ease;
-	border-right: solid #ff8928 10px;
+	border-right: solid $orange-color 10px;
 
 	&:hover {
-		color: #ff8928;
+		color: $smoke-color;
 	}
 }
 
@@ -63,7 +71,8 @@
 	&:hover,
 	&:focus,
 	&:active {
-		color: black;
+		color: $smoke-color;
+		text-decoration: none;
 	}
 
 	&:hover:before,

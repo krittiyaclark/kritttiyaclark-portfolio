@@ -15,7 +15,7 @@ const HomePage = () => (
 			<div className='header'>
 				<div className='heading'>
 					<Typing speed={200}>
-						<h2>Krittiya Clark</h2>
+						<h2 className='theme-gradient'>Krittiya Clark</h2>
 					</Typing>
 				</div>
 				<div className='box-bg'>

@@ -44,27 +44,23 @@ class AboutPage extends React.Component {
 								Eleifend donec pretium vulputate sapien nec sagittis aliquam
 							</p>
 							<p>
-								malesuada bibendum. Tristique nulla aliquet enim tortor at
-								auctor urna nunc id. Pulvinar etiam non quam lacus suspendisse.
-								Habitasse platea dictumst vestibulum rhoncus est pellentesque
-								elit ullamcorper. Enim tortor at auctor urna nunc id cursus
-								metus aliquam. Tincidunt lobortis feugiat vivamus at augue eget
-								arcu. Scelerisque viverra mauris in aliquam. Dictum varius duis
-								at consectetur lorem donec massa. malesuada bibendum. Tristique
-								nulla aliquet enim tortor at auctor urna nunc id. Pulvinar etiam
-								non quam lacus suspendisse. Habitasse platea dictumst vestibulum
-								rhoncus est pellentesque elit ullamcorper. Enim tortor at auctor
-								urna nunc id cursus metus aliquam. Tincidunt lobortis feugiat
-								vivamus at augue eget arcu. Scelerisque viverra mauris in
-								aliquam. Dictum varius duis at consectetur lorem donec massa.
+								Front-End Web Developer with 4 years of design experience.
+								Self-starter, highly motivated, and passionate about creating
+								customized responsive website design. I enjoy collaboration,
+								being curious and interested in learning, bringing strong
+								communication and teamwork skills, and helping others grow by
+								sharing my expertise and encouraging best practices.
 							</p>
-							<button
-								className='btn btn-outline-secondary button'
-								type='button'
-								onClick={this.handleClick}>
-								<i className='fas fa-download'></i>
-								Dowload Resume
-							</button>
+							<a
+								href={images}
+								target='_blank'
+								rel='noopener noreferrer'
+								download>
+								<button className='button-center text-center button-hover hvr-sweep-to-left'>
+									<i className='fas fa-download'></i>
+									Dowload Resume
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>

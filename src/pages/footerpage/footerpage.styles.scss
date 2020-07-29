@@ -1,21 +1,17 @@
 @import '../../assets/scss/navbar-hovereffect.scss';
+@import '../../assets/scss/color.scss';
 
 #footer {
 	padding: 40px 5% 40px 5%;
-	color: #666666;
+	color: $black-color;
 
 	#connect a {
 		color: #ff8928;
 		margin-bottom: 11px;
 	}
 
-	.copy-right {
-		color: #ffffff;
-		margin-top: 15px;
-
-		p {
-			margin: 0;
-		}
+	p {
+		margin: 0;
 	}
 
 	#nav-footer {
@@ -30,10 +26,6 @@
 
 			@include navbar-hover-effect;
 		}
-
-		a {
-			color: #ffffff;
-		}
 	}
 
 	#nav-footer-bottom {
@@ -47,4 +39,10 @@
 			width: 30px;
 		}
 	}
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

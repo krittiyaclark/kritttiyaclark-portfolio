@@ -67,8 +67,11 @@ class Header extends React.Component {
 				className='navbar fixed-top navbar-expand-lg navbar-light'
 				style={{
 					backgroundColor:
-						this.state.status === 'top' ? 'transparent' : '#f4c430',
+						this.state.status === 'top'
+							? 'transparent'
+							: 'rgb(244 196 48 / 52%)',
 					position: 'fixed',
+					color: '#000000',
 				}}>
 				<a className='navbar-brand' href='/'>
 					<div id='hexagon'>

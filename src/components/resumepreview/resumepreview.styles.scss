@@ -1,6 +1,6 @@
+@import '../../assets/scss/color.scss';
+
 .timeline {
-	// background: url(../img/timeline-bg.jpg) repeat-y scroll center center
-	// 	rgba(0, 0, 0, 0);
 	height: auto;
 	margin: 40px auto 0;
 	padding: 0 0 80px;
@@ -8,13 +8,13 @@
 	width: 100%;
 
 	.title {
-		background: none repeat scroll 0 0 #ffffff;
-		border: 3px solid #d6d6d6;
+		background: none repeat scroll 0 0 $smoke-color;
+		border: 3px solid $almostBlack-color;
 		border-radius: 6px;
 		clear: both;
-		color: #3c3d3d;
+		color: $gold-color;
 		font-size: 18px;
-		font-weight: 400;
+		font-weight: 900;
 		height: 65px;
 		margin: 31px auto;
 		padding: 15px 0;
@@ -24,14 +24,14 @@
 	}
 
 	.note-bg {
-		background: none repeat scroll 0 0 rgba(242, 242, 242, 0.1);
+		background: none repeat scroll 0 0 $smoke-color;
 		border-radius: 12px;
 		cursor: pointer;
 		padding: 20px;
-		width: 95%;
+		width: 100%;
 
 		&:hover {
-			background: none repeat scroll 0 0 #fff;
+			background: none repeat scroll 0 0 $gold-color;
 		}
 
 		&:hover h4 {
@@ -59,17 +59,28 @@
 		transition: all 0.5s ease 0s;
 		z-index: 550;
 
+		p {
+			color: $black-color;
+		}
+
 		h4 {
-			color: #666666;
+			color: $gold-color;
 			font-size: 19px;
+			font-weight: 900;
 			margin: 5px 0;
 			text-transform: uppercase;
+			margin-bottom: 1em;
 		}
 
 		h5 {
-			color: #666666;
+			color: $almostBlack-color;
 			font-size: 16px;
-			font-weight: 300;
+			font-weight: 900;
+			margin-bottom: 9px;
+		}
+
+		.date {
+			color: $gold-color;
 		}
 
 		.arrow {
@@ -106,13 +117,13 @@
 		}
 
 		&:hover:after {
-			background: none repeat scroll 0 0 #474d5d;
-			border: 2px solid #666666;
+			background: none repeat scroll 0 0 $gold-color;
+			border: 2px solid $almostBlack-color;
 		}
 
 		&:after {
-			background: none repeat scroll 0 0 #e1e1e1;
-			border: 2px solid #d6d6d6;
+			background: none repeat scroll 0 0 $smoke-color;
+			border: 2px solid $almostBlack-color;
 			border-radius: 4px;
 			-webkit-border-radius: 4px;
 			content: '';
