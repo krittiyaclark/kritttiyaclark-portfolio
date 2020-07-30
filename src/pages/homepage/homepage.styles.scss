@@ -52,7 +52,7 @@
 
 	.header {
 		padding: 20px;
-		max-width: 850px;
+		// max-width: 850px;
 		color: $white-color;
 
 		.theme-gradient {
@@ -62,7 +62,7 @@
 
 		.heading h2 {
 			display: block;
-			font-size: 80px;
+			font-size: 90px;
 			font-weight: 700;
 			text-transform: uppercase;
 			width: 100%;
@@ -86,6 +86,19 @@
 	}
 }
 
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+	.home-content .header .heading h2 {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 2) {
+	.home-content .header .heading h2 {
+		font-size: 20px;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 	.homepage .header .heading h2 {
 		font-size: 52px;
@@ -96,5 +109,9 @@
 		font-size: 18px;
 		padding: 5px 15px;
 		letter-spacing: 1px;
+	}
+
+	.home-content .header .box-bg a {
+		font-size: 16px;
 	}
 }

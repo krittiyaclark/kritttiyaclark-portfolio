@@ -31,48 +31,18 @@ class Header extends React.Component {
 					id: 3,
 					name: 'Twitter',
 					icon: twitterIcon,
-					url: 'https://twitter.com/themeyourweb',
+					url: 'https://twitter.com/krittiyaclark',
 					alt: 'Twitter',
 				},
 			],
-			status: 'top',
-			listener: null,
 		}
-	}
-
-	componentDidMount() {
-		this.listener = document.addEventListener('scroll', (event) => {
-			var scrolled = document.scrollingElement.scrollTop
-			if (scrolled >= 120) {
-				if (this.state.status !== 'something') {
-					this.setState({ status: 'something' })
-				}
-			} else {
-				if (this.state.status !== 'top') {
-					this.setState({ status: 'top' })
-				}
-			}
-		})
-	}
-
-	componentDidUpdate() {
-		document.removeEventListener('scroll', this.state.listener)
 	}
 
 	render() {
 		const { socialLinks } = this.state
 
 		return (
-			<nav
-				className='navbar fixed-top navbar-expand-lg navbar-light'
-				style={{
-					backgroundColor:
-						this.state.status === 'top'
-							? 'transparent'
-							: 'rgb(244 196 48 / 52%)',
-					position: 'fixed',
-					color: '#000000',
-				}}>
+			<nav className='navbar navbar-expand-lg navbar-dark'>
 				<a className='navbar-brand' href='/'>
 					<div id='hexagon'>
 						<div id='circle'>

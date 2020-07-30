@@ -41,19 +41,26 @@ class AboutPage extends React.Component {
 						</div>
 						<div className='col-md-8 col-xs-8'>
 							<p>
-								Hello! I'm Krittiya, a front-end web developer with an art
-								background based in Vermont.
+								Hello! I'm Krittiya, a front-end web developer with an art and
+								design background.
 							</p>
 							<p>
-								I was curious as to how websites were built that how I taught
-								myself learn how to code and never stopped ever since. I am a
-								self-starter, passionate, and highly motivated when it comes to
-								programming. I enjoy learning and building projects everyday.
-								Despite this, I still raise my two beautiful children.
+								I live with my husband and two beautiful children in Vermont.
 							</p>
 							<p>
-								When I am not coding, I like to cook, travel, snowboard and
-								drink green tea.
+								I was curious as to how websites were built that was how I
+								taught myself to learn how to code and have never stopped ever
+								since.
+							</p>
+							<p>
+								As a homemaker who raised children, time is important; this has
+								led me to be highly motivated, passionate, and a self-starter in
+								my daily life, I take every opportunity to learn and build
+								projects.
+							</p>
+							<p>
+								When I am not coding, I like to cook, travel, snowboard, run,
+								and drink green tea.
 							</p>
 							<p>
 								Here are a few technologies I've been working with recently:
@@ -72,7 +79,7 @@ class AboutPage extends React.Component {
 									</p>
 									<p>
 										<i className='fa fa-caret-right' aria-hidden='true'>
-											Hooks
+											Context
 										</i>
 									</p>
 								</div>
@@ -94,16 +101,6 @@ class AboutPage extends React.Component {
 									</p>
 								</div>
 							</div>
-							<a
-								href={images}
-								target='_blank'
-								rel='noopener noreferrer'
-								download>
-								<button className='button-center text-center button-hover hvr-sweep-to-left'>
-									<i className='fa fa-download' aria-hidden='true'></i>
-									Dowload Resume
-								</button>
-							</a>
 						</div>
 					</div>
 				</div>

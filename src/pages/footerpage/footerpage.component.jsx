@@ -45,44 +45,29 @@ class FooterPage extends React.Component {
 				<div className='container'>
 					<div className='row' id='nav-footer-bottom'>
 						<div className='col-md-12 col-sm-12 footer'>
-							<h2 id='connect'>
-								<a href='mailto:krittiyaclark@gmail.com'>Let's talk</a>
-							</h2>
-							<nav id='nav-footer'>
-								<ul className='ml-auto'>
-									<li className='nav-item active'>
-										<a className='nav-link' href='/'>
-											Home <span className='sr-only'>(current)</span>
-										</a>
-									</li>
-									<li className='nav-item'>
-										<a className='nav-link' href='#about'>
-											About
-										</a>
-									</li>
-									<li className='nav-item'>
-										<a className='nav-link' href='#skills'>
-											Skills
-										</a>
-									</li>
-									<li className='nav-item'>
-										<a className='nav-link' href='#portfolio'>
-											Portfolio
-										</a>
-									</li>
-									<li className='nav-item'>
-										<a className='nav-link' href='#resume'>
-											Resume
-										</a>
-									</li>
-								</ul>
-							</nav>
-							<p className='copy-right'>
-								&copy; {new Date().getFullYear()} Krittiya Clark
+							<h2 id='connect'>Let's talk</h2>
+							<p>
+								If you want to learn more about me or just want to say hi.
+								Please email me and I'll reply back within 24 hours.
 							</p>
+							<a href='mailto:krittiyaclark@gmail.com'>
+								<i className='fa fa-envelope-square'></i>
+							</a>
 						</div>
+					</div>
 
-						{/* <div className='col-md-3 col-sm-6'>
+					<section>
+						<div className='row'>
+							<div className='col-md-12 col-sm-12 sub-footer'>
+								<p className='copy-right text-center'>
+									Designed & Built by &copy; {new Date().getFullYear()} Krittiya
+									Clark
+								</p>
+							</div>
+						</div>
+					</section>
+
+					{/* <div className='col-md-3 col-sm-6'>
 							<div className='social_links ml-auto text-right'>
 								<ul className='list-unstyled'>
 									{socialLinks.map((link) => (
@@ -98,7 +83,6 @@ class FooterPage extends React.Component {
 								</ul>
 							</div>
 						</div> */}
-					</div>
 				</div>
 			</footer>
 		)

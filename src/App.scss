@@ -98,6 +98,7 @@ i::before {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 150px;
 
 	p {
 		color: $smoke-color;
@@ -119,6 +120,28 @@ i::before {
 	a {
 		text-decoration: none;
 		color: black;
+	}
+}
+
+.scroll-to-top {
+	position: fixed;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	animation: fadeIn 700ms ease-in-out 1s both;
+	cursor: pointer;
+
+	i {
+		color: $smoke-color;
+		font-size: 3vw;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
 
