@@ -28,6 +28,15 @@ button {
 	}
 }
 
+i::before {
+	margin-right: 16px;
+}
+
+.card-title {
+	color: $gold-color;
+	margin: 20px 0 10px 0;
+}
+
 #main {
 	position: relative;
 	font-family: 'Poppins', sans-serif;

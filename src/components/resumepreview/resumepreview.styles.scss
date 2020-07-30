@@ -1,4 +1,5 @@
 @import '../../assets/scss/color.scss';
+@import '../../assets/scss/mixin.scss';
 
 .timeline {
 	height: auto;
@@ -31,15 +32,19 @@
 		width: 100%;
 
 		&:hover {
-			background: none repeat scroll 0 0 $gold-color;
+			@include gradient;
+		}
+
+		&:hover h5 {
+			color: $almostBlack-color;
 		}
 
 		&:hover h4 {
-			color: #707070;
+			color: $almostBlack-color;
 		}
 
 		&:hover p {
-			color: #767676;
+			color: $almostBlack-color;
 		}
 
 		&:hover:after {

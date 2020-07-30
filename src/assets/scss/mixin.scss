@@ -1,0 +1,28 @@
+@mixin boxshadow {
+	box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@mixin gradientFilter {
+	background: rgb(244, 196, 48);
+	background: linear-gradient(
+		90deg,
+		rgba(244, 196, 48, 1) 0%,
+		rgba(255, 126, 0, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4c430', endColorstr='#ff7e00',GradientType=1 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin gradient {
+	background: rgb(244, 196, 48);
+	background: linear-gradient(
+		90deg,
+		rgba(244, 196, 48, 1) 0%,
+		rgba(255, 126, 0, 1) 100%
+	);
+}

@@ -26,6 +26,10 @@
 
 			@include navbar-hover-effect;
 		}
+
+		.nav-link:hover {
+			color: $smoke-color;
+		}
 	}
 
 	#nav-footer-bottom {

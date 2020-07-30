@@ -32,10 +32,10 @@ class PortfolioPage extends React.Component {
 					id: 2,
 					image: project02,
 					title: 'Clothing Store',
-					stack: ['HTML5', 'CSS3 | SCSS', 'Bootstrap', 'React', 'firebase'],
+					stack: ['HTML5', 'CSS3 | SCSS', 'Bootstrap 4', 'React', 'firebase'],
 					deployment: 'Heroku',
 					projectDescription:
-						"An e-commerce clothing store is responsive using Bootstrap 4. It has a lot of features including Google authentication for sign-in and sign-up, Firebase for storing the user's address in a cart item, and integrating payment methods with Stripe",
+						'An e-commerce clothing store is responsive. It has a lot of features including Google authentication for sign-in and sign-up, add to cart item, Firebase for storing the user and cart item data in a cart item, and integrating payment methods with Stripe',
 					view: 'Project',
 					liveProjectUrl: 'https://clothing-store--live.herokuapp.com',
 					gitHub: 'GitHub',
@@ -48,7 +48,7 @@ class PortfolioPage extends React.Component {
 					stack: ['HTML5', 'CSS3', 'React', 'ContextApi', 'Hooks'],
 					deployment: 'Netlify',
 					projectDescription:
-						"The GitHub search user app is responsive by using a CSS grid with styled-components.js. I use Auth0 for authentication to redirect users to the login page if they have not logged in yet. The user can search the GitHub user list and the results will display, along with the user repos, followers, Gists and other information about the user, using Fusioncharts to display the user's most recent programming language.",
+						'The GitHub search user app is responsive. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks',
 					view: 'Project',
 					liveProjectUrl: 'https://react-search-github-user-live.netlify.app',
 					gitHub: 'GitHub',

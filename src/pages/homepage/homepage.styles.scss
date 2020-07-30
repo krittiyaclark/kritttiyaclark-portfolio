@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;0,900;1,800;1,900&display=swap');
 @import '../../assets/scss/color.scss';
+@import '../../assets/scss/mixin.scss';
 
 #home-header {
 	height: 100vh;
@@ -55,15 +56,7 @@
 		color: $white-color;
 
 		.theme-gradient {
-			background: rgb(244, 196, 48);
-			background: linear-gradient(
-				90deg,
-				rgba(244, 196, 48, 1) 0%,
-				rgba(255, 126, 0, 1) 100%
-			);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4c430', endColorstr='#ff7e00',GradientType=1 );
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include gradientFilter;
 			display: inline-block;
 		}
 
