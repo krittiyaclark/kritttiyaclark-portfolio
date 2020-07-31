@@ -45,7 +45,8 @@ class AboutPage extends React.Component {
 								design background.
 							</p>
 							<p>
-								I live with my husband and two beautiful children in Vermont.
+								I live with my husband and two beautiful children in Vermont,
+								USA.
 							</p>
 							<p>
 								I was curious as to how websites were built so I taught myself
