@@ -57,6 +57,7 @@ const RESUME_DATA = [
 				id: 4,
 				name: 'Film/Cinema/Video Studies',
 				subName: 'School of Visual Arts',
+				location: 'New York, New York',
 				description: null,
 				date: ' Jun 2009 to Sep 2010',
 			},
@@ -68,8 +69,9 @@ const RESUME_DATA = [
 		items: [
 			{
 				id: 1,
-				name: ' Suan Sunan dha Rajabhat University in Fine and App lied Art',
+				name: ' Suan Sunan dha Rajabhat University in Fine and Applied Art',
 				subName: 'Bachelor of Arts - BA',
+				location: 'Bangkok, Thailand',
 				description: null,
 				date: 'Apr 1999 to Apr 2003',
 			},

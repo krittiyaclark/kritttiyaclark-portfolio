@@ -15,7 +15,10 @@ export const ResumePreview = ({ title, items }) => (
 
 							<h5>{item.subName}</h5>
 
-							<p>{item.description}</p>
+							<p>
+								{item.description}
+								<span>{item.location}</span>
+							</p>
 
 							<p className='date'>{item.date}</p>
 							<span className='arrow fa fa-play'></span>

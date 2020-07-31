@@ -21,7 +21,7 @@ class PortfolioPage extends React.Component {
 					stack: ['HTML5', 'CSS3', 'React', 'ContextApi', 'Hooks'],
 					deployment: 'Netlify',
 					projectDescription:
-						'A responsive website built with React is a website that features a beach room resort, each with room details and sorting features. These are sorted by room-type, price, feature, and capacity.',
+						'This is a responsive website I built with React. It is a website that features a beach resort, with room details and sorting features. Sorted by room-type, price, feature, and capacity.',
 					view: 'Project',
 					liveProjectUrl: 'https://beach-resort-react-app-live.netlify.app',
 					gitHub: 'GitHub',
@@ -35,7 +35,7 @@ class PortfolioPage extends React.Component {
 					stack: ['HTML5', 'CSS3 | SCSS', 'Bootstrap 4', 'React', 'firebase'],
 					deployment: 'Heroku',
 					projectDescription:
-						'An e-commerce clothing store is responsive. It has a lot of features including Google authentication for sign-in and sign-up, add to cart item, Firebase for storing the user and cart item data in a cart item, and integrating payment methods with Stripe',
+						'This is an e-commerce clothing store website I built which is responsive. It has a lot of features including Google authentication for sign-in and sign-up, add item to cart, Firebase for storing the user and cart item data, and integrating payment methods with Stripe',
 					view: 'Project',
 					liveProjectUrl: 'https://clothing-store--live.herokuapp.com',
 					gitHub: 'GitHub',
@@ -48,7 +48,7 @@ class PortfolioPage extends React.Component {
 					stack: ['HTML5', 'CSS3', 'React', 'ContextApi', 'Hooks'],
 					deployment: 'Netlify',
 					projectDescription:
-						'The GitHub search user app is responsive. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks',
+						'This GitHub search user app is responsive. It includes data visualizations of your top languages, starred repositories, and allows users to sort through top repos by number of stars and forks',
 					view: 'Project',
 					liveProjectUrl: 'https://react-search-github-user-live.netlify.app',
 					gitHub: 'GitHub',

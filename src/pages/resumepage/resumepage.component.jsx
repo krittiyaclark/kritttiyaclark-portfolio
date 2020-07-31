@@ -1,7 +1,7 @@
 import React from 'react'
 
 import RESUME_DATA from './resume.data'
-import krittiyaclarkResume from '../../assets/images/Krittiya_Clark.jpg'
+import krittiyaclarkResume from '../../assets/files/krittiya-clark-resume.pdf'
 import { ResumePreview } from '../../components/resumepreview/resumepreview.component'
 
 import './resumepage.styles.scss'
@@ -29,7 +29,7 @@ class ResumePage extends React.Component {
 						))}
 					</div>
 				</section>
-				<section className='section-padding'>
+				<section className='section-padding sub-section'>
 					<div className='container text-center'>
 						<div className='row'>
 							<div className='col-md-12 col-sm-12'>
@@ -40,7 +40,7 @@ class ResumePage extends React.Component {
 									download>
 									<button className='button-center text-center button-hover hvr-sweep-to-left'>
 										<i className='fa fa-download' aria-hidden='true'></i>
-										Dowload Resume
+										Download Resume
 									</button>
 								</a>
 							</div>

@@ -48,14 +48,13 @@ class AboutPage extends React.Component {
 								I live with my husband and two beautiful children in Vermont.
 							</p>
 							<p>
-								I was curious as to how websites were built that was how I
-								taught myself to learn how to code and have never stopped ever
-								since.
+								I was curious as to how websites were built so I taught myself
+								how to code and have not stopped since.
 							</p>
 							<p>
-								As a homemaker who raised children, time is important; this has
-								led me to be highly motivated, passionate, and a self-starter in
-								my daily life, I take every opportunity to learn and build
+								Raising two kids taught me that time is important; this has led
+								me to be highly motivated, passionate, and a self-starter in my
+								daily life. I take every opportunity to learn and build
 								projects.
 							</p>
 							<p>
